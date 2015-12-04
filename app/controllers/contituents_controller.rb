@@ -1,0 +1,2 @@
+class ContituentsController < ApplicationController
+end
