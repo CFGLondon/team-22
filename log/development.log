@@ -445,3 +445,22 @@ Started GET "/" for ::1 at 2015-12-04 21:50:40 +0000
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/tokwii/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
 Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-04 22:01:28 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/tokwii/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 19ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-04 22:01:28 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/tokwii/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for ::1 at 2015-12-04 22:01:40 +0000
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1120ms (Views: 1119.8ms | ActiveRecord: 0.0ms)

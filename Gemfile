@@ -29,6 +29,9 @@ gem "bower-rails", "~> 0.10.0"
 # Managing static files
 gem 'high_voltage', '~> 2.4.0'
 
+# for user authentication
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
