@@ -13,7 +13,6 @@ class VolunteerController < ApplicationController
     end
 
     def schedule
-
     end 
 
 end

@@ -14,7 +14,12 @@ Rails.application.routes.draw do
   match '/volunteer/reviews', to: 'volunteer#reviews', via: [:get]
   match '/volunteer/schedule', to: 'volunteer#schedule', via: [:get]
   match '/volunteer/settings', to: 'volunteer#settings', via: [:get]
-
+  # Contituents
+  match '/contituent/home', to: 'contituents#home', via: [:get]
+  match '/contituent/profile', to: 'contituents#profile', via: [:get]
+  match '/contituent/reviews', to: 'contituents#reviews', via: [:get]
+  match '/contituent/schedule', to: 'contituents#schedule', via: [:get]
+  match '/contituent/settings', to: 'contituents#settings', via: [:get]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
