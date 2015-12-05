@@ -5,6 +5,8 @@ class VolunteerController < ApplicationController
     end
 
     def create
+        puts params
+        render 'show'
     end 
 
     def home

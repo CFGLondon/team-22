@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   #match '/registration/volunteer', to: 'registration#volunteer', via: [:get]
 
   get '/volunteer/register', :as => 'volunteer_register',to: 'volunteer#new'
+  match '/volunteer/register', to: 'volunteer#create', via: [:post]
 
 
 
