@@ -6,7 +6,18 @@ class VolunteerController < ApplicationController
 
     def create
         puts params
-        render 'show'
+        @volunteer = User.create!(
+                    name: params[:name],
+                    password: params[:password],
+                    avaliability_date: params[:avaliability_date],
+                    phone: params[:phone],
+                    gender: params[:gender],
+                    referee_name: params[:referee_name],
+                    refree_email: params[:refree_email],
+                    referee_description: params[:referee_description],
+                    preference_one: params[:preference_two],
+                    preference_three: params[:preference_three]
+                    )
     end 
 
     def home
