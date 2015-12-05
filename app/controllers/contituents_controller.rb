@@ -1,6 +1,7 @@
 class ContituentsController < ApplicationController
 
     def home
+        
     end 
 
     def profile
