@@ -29,6 +29,8 @@ gem "bower-rails", "~> 0.10.0"
 # Managing static files
 gem 'high_voltage', '~> 2.4.0'
 
+gem "font-awesome-rails"
+
 # for user authentication
 gem 'devise'
 

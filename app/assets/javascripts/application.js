@@ -14,4 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+
+//= require ajaxchimp
+//= require placeholdem
+//= require slick
+//= require isotope/dist/isotope.pkgd.min.js
+//= require waypoints/waypoints.min.js
+//= require stellar
+//= require modernizr/modernizr.js
+//= require rs-plugin/js/jquery.themepunch.plugins.min.js
+//= require rs-plugin/js/jquery.themepunch.revolution.min.js
+//= require TimeCircles
+
 //= require_tree .

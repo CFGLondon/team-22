@@ -1,1 +1,391 @@
-<h1>Landing Page</h1>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">    
+    <%= favicon_link_tag 'logo.png', :rel => 'icon', :type => 'image/png' %>
+
+    <title>YouYom - Simplifying Shopping Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <%= csrf_meta_tags %>
+
+   <!-- For third-generation iPad with high-resolution Retina display: -->
+    <!-- Size should be 144 x 144 pixels -->
+    <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <!-- Size should be 114 x 114 pixels -->
+    <%= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
+
+    <!-- For first- and second-generation iPad: -->
+    <!-- Size should be 72 x 72 pixels -->
+    <%= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <!-- Size should be 57 x 57 pixels -->
+    <%= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+
+    <!-- For all other devices -->
+    <!-- Size should be 32 x 32 pixels -->
+    <!--%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %-->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+</head>
+
+<body>
+    <div class="pre-loader">
+        <div class="load-con">
+            <%= image_tag 'logo.png', :class => 'animated fadeInDown' %>
+
+            <div class="spinner">
+                <div class="bounce1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="go-down">
+        <a href="#about">
+            <i class="fa fa-angle-down fa-3x"></i>
+        </a>
+    </div>
+    <!-- Wrap all page content here -->
+    <div id="wrap" class="home">
+
+        <header class="masthead">
+            <div class="slider-container" id="slider">
+                <div class="tp-banner-container">
+                    <div class="tp-banner">
+                        <ul>
+                            <li data-transition="slotfade-horizontal" data-slotamount="7" data-masterspeed="500">
+                                <!-- MAIN IMAGE -->
+								<%= image_tag 'newImage.png', :alt => 'slidebg1' %>
+                                <!-- LAYERS -->
+
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption lfl fadeout" data-x="left" data-y="center" data-hoffset="0" data-voffset="0" data-speed="500" data-start="700" data-easing="Power4.easeOut">
+                                	<%= image_tag 'iPhone6.png' %>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="tp-bannertimer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fixed navbar -->
+            <div class="navbar navbar-static-top" id="nav" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-align-justify"></i>
+                        </button>
+                        <a class="navbar-brand" href="#slider">
+
+                        	<%= image_tag 'logo.png', :alt => "" %>
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#slider">Home</a>
+                            </li>
+                            <li><a href="#about">about</a>
+                            </li>
+                            <li><a href="#features">features</a>
+                            </li>
+                            <li><a href="#pricing">Steps</a>
+                            </li>
+
+                            <li class="social-nav visible-lg">
+                                <a href="https://facebook.com/youyomapp"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/youyomapp"><i class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!--/.container -->
+            </div>
+            <!--/.navbar -->
+        </header>
+    </div>
+    <div class="wrapper">
+        <section id="about">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">                
+                    <h1>About Us</h1>
+                    <div class="divider"></div>
+                    <p>We help more than 5m poeple every year to<br> provide support, companionship &amp; advice for older people</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="about-item scrollpoint sp-effect2">
+                            <i class="fa fa-ambulance fa-2x"></i><br/>
+                            <h3>Easy setup</h3>
+                            <p>Log-in through your pre-existing Facebook Account. You can also create a new user ID to connect with your friends on YouYom platform</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-phone fa-2x"></i><br/>
+                            <h3>On-the-go</h3>
+                            <p>Prompt services provided to our users. Shop on-the-go &amp; your order is ready before you get to store for pick up. Shopping at the same shop price</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-users fa-2x"></i>
+                            <h3>Social support</h3>
+                            <p>Share your moments with your loved ones. YouYom believes in connectedness. You can see what your friends are up to.. Even better, pay a friends bill </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect1">
+                            <i class="fa fa-connectdevelop fa-2x"></i><br/>
+                            <h3>Deals</h3>
+                            <p>Yes, deals.. Get the best deals around you, save coupon ID and claim before it expires. We store your voucher IDs &amp; search for the best items &amp; deals around you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>Features</h1>
+                    <div class="divider"></div>
+                    <p>Getting You The Best Of Everything</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
+                        <div class="media text-right feature">
+                            <a class="pull-right">
+                                <i class="fa fa-floppy-o fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Coupons</h3><br/>
+                                Save Vouchers &amp; Coupons.
+                            </div>
+                        </div>
+                        <div class="media text-right feature">
+                            <a class="pull-right">
+                                <i class="fa fa-archive fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">History</h3><br/>
+                                Access your e-Receipt.
+                            </div>
+                        </div>
+                        <div class="media text-right feature">
+                            <a class="pull-right">
+                                <i class="fa fa-credit-card fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Payment</h3><br/>
+                                One-time Card Registration.
+                            </div>
+                        </div>
+                        <div class="media text-right feature">
+                            <a class="pull-right">
+                                <i class="fa fa-users fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Send Pay Request</h3><br/>
+                                Send / Recieve Payment to / from Friends.
+                            </div>
+                        </div>
+                        <div class="media text-right feature">
+                            <a class="pull-right">
+                                <i class="fa fa-lock fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Secured Checkout</h3><br/>
+                                One-Click Purchase
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4" >
+                    	<%= image_tag 'iPhone6Menu.png', :class => 'img-responsive scrollpoint sp-effect5' %>
+                    </div>
+                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
+                        <div class="media feature">
+                            <a class="pull-left">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Maps</h3><br/>
+                                Get directions to your point of purchase.
+                            </div>
+                        </div>
+                        <div class="media feature">
+                            <a class="pull-left">
+                                <i class="fa fa-film fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Social Media™</h3><br/>
+                                Upload &amp; share your awesome food pics.
+                            </div>
+                        </div>
+                        <div class="media feature">
+                            <a class="pull-left">
+                                <i class="fa fa-thumbs-up fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Likes / Comments</h3><br/>
+                                Keep up with your friends.
+                            </div>
+                        </div>
+                        <div class="media feature">
+                            <a class="pull-left">
+                                <i class="fa fa-shopping-cart fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Shop on-the-go</h3><br/>
+                                Anywhere you are, we are.
+                            </div>
+                        </div>
+                        <div class="media active feature">
+                            <a class="pull-left">
+                                <i class="fa fa-plus fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">And much more!</h3><br/>
+                                Yes, much more...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="heading">Pricing</h2><br/>
+                    <h3 class="subheading text-muted">Only applies to business owners!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="pricing">
+                        <li>
+                            <div class="pricing-image">
+                                <%= image_tag 'fees.jpg', :class => 'img-circle img-responsive' %>
+                            </div>
+                            <div class="pricing-panel">
+                                <div class="pricing-heading">
+                                    <h4>Charges</h4>
+                                    <h4 class="subheading">Let's be clear</h4>
+                                </div>
+                                <div class="pricing-body">
+                                    <p class="text-muted"> 2.6% + £.20 per transaction. This is almost the same charges with your current card providers. Business Owners get free use of the platform so as to grow their businesses. You can add multiple businesses with the same business name but different locations!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pricing-inverted">
+                            <div class="pricing-image">
+                                <%= image_tag 'hidden_fees.jpg', :class => 'img-circle img-responsive' %>
+                            </div>
+                            <div class="pricing-panel">
+                                <div class="pricing-heading">
+                                    <h4>No Hidden Fees</h4>
+                                    <h4 class="subheading">We strive to reduce costs</h4>
+                                </div>
+                                <div class="pricing-body">
+                                    <p class="text-muted">No monthly costs, no refund costs, no inactivity fees, no hidden fees or surprises. We are transparent &amp; crystal clear. Display your goods, products &amp; services for free on this platform!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pricing-image">
+                                <%= image_tag 'analytics.png', :class => 'img-circle img-responsive' %>
+                            </div>
+                            <div class="pricing-panel">
+                                <div class="pricing-heading">
+                                    <h4>Sophisticated Analytics</h4>
+                                    <h4 class="subheading">Monitor your inventory</h4>
+                                </div>
+                                <div class="pricing-body">
+                                    <p class="text-muted">Sales inventory and metrics are available free of charge on this platform; so you can easily monitor your products performance!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pricing-inverted">
+                            <div class="pricing-image">
+                                <%= image_tag 'verified.jpeg', :class => 'img-circle img-responsive' %>
+                            </div>
+                            <div class="pricing-panel">
+                                <div class="pricing-heading">
+                                    <h4>Verification</h4>
+                                    <h4 class="subheading">Business Background Verification</h4>
+                                </div>
+                                <div class="pricing-body">
+                                    <p class="text-muted">All businesses are most likely to be background verified so as to prevent illegal transactions on this platform. We remain true to improving your sales!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pricing-inverted">
+                            <div class="pricing-image">
+                                <h4>Together,
+                                    <br>We <br>Create
+                                    <br>History!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; AgeUK 2015</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline medias">
+                            <li><a href="https://facebook.com/youyomapp"><i class="fa fa-facebook fa-1x"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/youyomapp"><i class="fa fa-twitter fa-1x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline links">
+                            <li><a href="#">Privacy Policy</a>
+                            </li>
+                            <li><a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</div>
+    <!--/wrap-->
+
+    <script>
+    $(document).ready(function() {
+        appMaster.preLoader();
+        appMaster.smoothScroll();
+        appMaster.scrollMenu();
+        appMaster.animateScript();
+        appMaster.navSpy();
+        appMaster.revSlider();
+        appMaster.stellar();
+        appMaster.maps();
+        appMaster.isoTop();
+        appMaster.canvasHack();
+        appMaster.placeHold();
+    });
+    </script>
+</body>
+</html>
