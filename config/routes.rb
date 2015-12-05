@@ -18,8 +18,9 @@ Rails.application.routes.draw do
 
   get '/contituent/register', :as => 'contituent_register',to: 'contituent#new'
   match '/contituent/register', to: 'contituent#create', via: [:post]
-
-
+   
+  # Admin
+  get '/admin', :as => 'admin_index',to: 'admin#index'
 
   #volunteer
   #match '/volunteer/register', to: 'volunteer#new', via: [:get]
