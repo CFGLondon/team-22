@@ -1,9 +1,7 @@
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-      t.integer :type
-      t.string :name
-      t.string :email
+      t.inte3ail
       t.string :password
       t.string :phone
       t.date :avaliability_date
