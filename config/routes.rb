@@ -23,6 +23,7 @@ Rails.application.routes.draw do
    
   # Admin
   get '/admin', :as => 'admin_index',to: 'admin#index'
+  get '/admin/upload', :as => 'admin_upload',to: 'admin#upload'
 
   #volunteer
   #match '/volunteer/register', to: 'volunteer#new', via: [:get]

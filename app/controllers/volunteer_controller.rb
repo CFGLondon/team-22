@@ -8,7 +8,6 @@ class VolunteerController < ApplicationController
         puts params
         @user = User.where(email: params[:email])
         puts @user
-
         render 'home'
     end
 

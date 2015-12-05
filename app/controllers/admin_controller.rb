@@ -3,7 +3,12 @@ class AdminController < ApplicationController
     def index
     end
 
-    def home3
+    def home
     end 
+
+    def upload
+        render 
+    end
+
 
 end

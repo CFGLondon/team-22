@@ -52,7 +52,10 @@
 		</div>
 		<div class="container">
 			<section class="content-inner">
-				<h2 class="content-sub-heading" onclick="location.href='./upload.html.erb';">Upload your file!!</h2>
+
+				<%= link_to admin_upload_path do %>
+                                    Upload File <% end %>
+			
 				<h2 class="content-sub-heading">Volunteers</h2>
 				<p id="Volunteers1">
 				<div class="tile-wrap">
