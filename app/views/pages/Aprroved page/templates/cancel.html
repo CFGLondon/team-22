@@ -53,7 +53,7 @@
 				<h2 class="content-sub-heading">Your Appointment</h2>
 				<p id="Volunteers1">
 				<div class="tile-wrap">
-					<div class="tile tile-collapse tile-brand">
+					<div class="tile tile-collapse tile-brand tile-appointment">
 						<div data-target="#tile-collapse-13" data-toggle="tile">
 							<div class="tile-inner">
 								<div class="text-overflow">Time</div>
@@ -64,10 +64,10 @@
 								<p>your appointment details</p>
 							</div>
 				
-				<div class="tile-footer">
+							<div class="tile-footer">
 								<div class="tile-footer-btn pull-left">
-									<a class="btn btn-flat waves-attach" onclick="approvedFunc(1,'Volunteers')"><span class="icon">check</span>&nbsp;Going</a>
-									<a class="btn btn-flat waves-attach" data-toggle="tile" onclick="LaterFunc(1,'Volunteers')"><span class="icon">close</span>&nbsp;Cancel Appointment</a>
+									<a class="btn btn-flat waves-attach" onclick="approvedFunc(1,'Appointment')"><span class="icon">check</span>&nbsp;Going</a>
+									<a class="btn btn-flat waves-attach" data-toggle="tile" onclick="LaterFunc(1,'Appointment')"><span class="icon">close</span>&nbsp;Cancel Appointment</a>
 								</div>
 							</div>
 						</div>
@@ -82,16 +82,9 @@
 	<!-- js -->
 	<script>
 		function approvedFunc(id, mode) {
-			if(mode == 'OldPeople') {
-			}
-			else {
-			}
 		}
 		function LaterFunc(id, mode) {
-			if(mode == 'OldPeople') {
-			}
-			else {
-			}
+			$(".tile-appointment").remove();
 		}
 	</script>
 	<script src="../js/base.min.js"></script>
