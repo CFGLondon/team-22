@@ -1,0 +1,19 @@
+<%= form_for @volunteer, url: {action: "new"} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_area :name %></br>
+  <%= f.label :password %>
+  <%= f.text_area :password %></br>
+   <%= f.label :avaliability_date %>
+  <%= f.text_area :avaliability_date %></br>
+   <%= f.label :phone %>
+  <%= f.text_area :phone %></br>
+   <%= f.label :gender %>
+  <%= f.text_area :gender %></br>
+   <%= f.label :referee_name %>
+  <%= f.text_area :referee_name%></br>
+   <%= f.label :refree_email %>
+  <%= f.text_area :refree_email%></br>
+   <%= f.label :referee_description %>
+  <%= f.text_area :referee_description %></br>
+  <%= f.submit "Submit" %>
+<% end %>
