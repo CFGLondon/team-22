@@ -19,7 +19,17 @@ class ContituentController < ApplicationController
     end 
 
     def home
+        @user = User.where(email: params[:email])
+        puts @user
+        render 'home'
     end 
+
+    def login
+        puts params
+        @user = User.where(email: params[:email])
+        puts @user
+        render 'home'
+    end
 
     def profile
     end
