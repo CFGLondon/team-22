@@ -5,8 +5,17 @@ class ContituentController < ApplicationController
     end
 
     def create
-        puts params
-        render 'show'
+        @constituent = User.create!(
+                    name: params[:name],
+                    password: params[:password],
+                    avaliability_date: params[:avaliability_date],
+                    phone: params[:phone],
+                    gender: params[:gender],
+                    referee_name: params[:referee_name],
+                    refree_email: params[:refree_email],
+                    referee_description: params[:referee_description]
+                    )
+        redirect_to '/contituent/register'
     end 
 
     def home
