@@ -10,11 +10,14 @@ Rails.application.routes.draw do
   get 'pages/about' => 'high_voltage/pages#show', id: 'about'
 
   # Registration
-  match '/registration/volunteer', to: 'registration#volunteer', via: [:get] 
+  #match '/registration/volunteer', to: 'registration#volunteer', via: [:get]
+
+  get '/volunteer/register', :as => 'volunteer_register',to: 'volunteer#new'
+
 
 
   #volunteer
-  match '/volunteer/register', to: 'volunteer#new', via: [:get]
+  #match '/volunteer/register', to: 'volunteer#new', via: [:get]
   match '/volunteer/home', to: 'volunteer#home', via: [:get]
   match '/volunteer/profile', to: 'volunteer#profile', via: [:get]
   match '/volunteer/reviews', to: 'volunteer#reviews', via: [:get]

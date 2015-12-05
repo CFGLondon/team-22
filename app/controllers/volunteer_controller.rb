@@ -2,6 +2,9 @@ class VolunteerController < ApplicationController
 
     def new
         @volunteer = User.new
+    end
+
+    def create
     end 
 
     def home
