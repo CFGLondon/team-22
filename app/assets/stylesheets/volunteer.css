@@ -1,21 +1,27 @@
 
 html {
 /*  box-sizing: border-box;*/
+
+  overflow: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 /*
 *, *:before, *:after {
   box-sizing: inherit;
 }*/
 
+
 .logmod {
-  background-image: url("http://www.transparenttextures.com/patterns/food.png");
-  background-color: #0884CC;
+  background-image: white;
   height: 100%;
   position: relative;
   text-align:center;
 
   display: block;
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
