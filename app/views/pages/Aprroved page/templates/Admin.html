@@ -53,7 +53,7 @@
 				<h2 class="content-sub-heading">Volunteers</h2>
 				<p id="Volunteers1">
 				<div class="tile-wrap">
-					<div class="tile tile-collapse tile-brand">
+					<div class="tile tile-collapse tile-brand tile-volunteer">
 						<div data-target="#tile-collapse-13" data-toggle="tile">
 							<div class="tile-inner">
 								<div class="text-overflow">Name</div>
@@ -77,7 +77,7 @@
 				<h2 class="content-sub-heading">Old people</h2>
 				<p id="OldPeople1">
 				<div class="tile-wrap">
-					<div class="tile tile-collapse tile-brand-accent">
+					<div class="tile tile-collapse tile-brand-accent tile-old">
 						<div data-target="#tile-collapse-14" data-toggle="tile">
 							<div class="tile-inner">
 								<div class="text-overflow">Name</div>
@@ -106,14 +106,18 @@
 	<script>
 		function approvedFunc(id, mode) {
 			if(mode == 'OldPeople') {
+				$(".tile-old").remove();
 			}
 			else {
+				$(".tile-volunteer").remove();
 			}
 		}
 		function LaterFunc(id, mode) {
 			if(mode == 'OldPeople') {
+				$(".tile-old").remove();
 			}
 			else {
+				$(".tile-volunteer").remove();
 			}
 		}
 	</script>
