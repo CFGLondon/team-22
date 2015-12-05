@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, width=device-width" name="viewport">
 	<title>Aprroved</title>
 
+<link href='../lib/fullcalendar.css' rel='stylesheet' />
+
+<link href='../lib/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../lib/moment.min.js'></script>
+<script src='../lib/jquery.min.js'></script>
+<script src='../lib/fullcalendar.min.js'></script>
+<script>
+
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			defaultDate: '2015-12-12',
+			selectable: true,
+			selectHelper: true,
+			select: function(start, end) {
+				var title = "Free time";
+				var time = prompt('Event Start:', '12:30:00');
+				d = new Date(start._d);
+				year = d.getYear() + 1900;
+				month = d.getMonth() + 1;
+				day = d.getDay() - 1;
+				if (day < 10) {
+					day = '0' + day;
+				}
+				if (month < 10) {
+					month = '0' + month;
+				}
+				start = year+'-'+month+'-'+day+ 'T' + time;
+				var eventData;
+				if (title) {
+					eventData = {
+						title: title,
+						start: start,
+						end: end
+					};
+					$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+				}
+				$('#calendar').fullCalendar('unselect');
+			},
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				
+				{
+					id: 999,
+					title: 'Free time',
+					start: '2015-12-09T16:00:00'
+				},
+				{
+					id: 998,
+					title: 'Free time',
+					start: '2015-12-16T16:00:00'
+				}
+			]
+		});
+		
+	});
+
+</script>
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
+	
 	<!-- css -->
 	<link href="../css/base.min.css" rel="stylesheet">
 
@@ -24,7 +106,10 @@
 </head>
 
 <body class="avoid-fout page-brand">
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
 	
 	<div class="avoid-fout-indicator avoid-fout-indicator-fixed">
 		<div class="progress-circular progress-circular-center">
@@ -45,11 +130,15 @@
 	<div class="content">
 		<div class="content-heading">
 			<div class="container">
-				<h1 class="heading">Appointment</h1>
+				<h1 class="heading">Home</h1>
 			</div>
 		</div>
+		
+		
+		
 		<div class="container">
 			<section class="content-inner">
+				<h2 class="content-sub-heading" onclick="location.href='./schedule.html.erb';">Go to your calendar!!</h2>
 				<h2 class="content-sub-heading">Your Appointment</h2>
 				<p id="Volunteers1">
 				<div class="tile-wrap">

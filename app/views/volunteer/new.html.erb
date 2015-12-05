@@ -13,7 +13,7 @@
           <span class="logmod__heading-subtitle">Enter your email and password <strong>to sign in</strong></span>
         </div>
         <div class="logmod__form">
-          <%= form_for @volunteer, url: {action: "new"} do |f| %>
+          <%= form_for @volunteer, url: {action: "login"} do |f| %>
           <!--%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %-->
             <div class="sminputs">
               <div class="input full">
@@ -28,7 +28,9 @@
               </div>
             </div>
             <div class="simform__actions">
-                <%= f.submit "Log in", :class => 'submit', :class => 'btn btn-success btn-lg pull-right', :type => 'submit' %>
+              
+                <%= f.submit "Log in", :class => 'submit', :class => 'btn btn-success btn-lg pull-right', :type => 'submit' %> 
+
                 <span class="simform__actions-sidetext"><a class="special" role="link" href="#">Forgot your password?<br>Click here</a></span>
             </div>
             <% end %>

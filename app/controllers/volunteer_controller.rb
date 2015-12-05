@@ -4,6 +4,14 @@ class VolunteerController < ApplicationController
         @volunteer = User.new
     end
 
+    def login
+        puts params
+        @user = User.where(email: params[:email])
+        puts @user
+
+        render 'home'
+    end
+
     def create
         puts params
         @volunteer = User.create!(
@@ -16,11 +24,12 @@ class VolunteerController < ApplicationController
                     refree_email: params[:refree_email],
                     referee_description: params[:referee_description]
                     )
-        render 'show'
+        redirect_to '/volunteer/register'
     end 
 
     def home
-    end 
+    end
+
 
     def profile
     end
