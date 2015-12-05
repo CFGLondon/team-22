@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151205025733) do
+ActiveRecord::Schema.define(version: 20151205103522) do
 
   create_table "schedules", force: :cascade do |t|
     t.integer  "volunteer_id"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20151205025733) do
     t.string   "perference_one"
     t.string   "preference_two"
     t.string   "preference_three"
+    t.string   "email"
   end
 
 end
