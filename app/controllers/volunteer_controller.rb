@@ -2,6 +2,11 @@ class VolunteerController < ApplicationController
 
     def new
         @volunteer = User.new
+    end
+
+    def create
+        puts params
+        render 'show'
     end 
 
     def home
