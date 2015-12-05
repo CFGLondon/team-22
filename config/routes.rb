@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   get '/volunteer/register', :as => 'volunteer_register',to: 'volunteer#new'
   match '/volunteer/register', to: 'volunteer#create', via: [:post]
 
+  get '/contituent/register', :as => 'contituent_register',to: 'contituent#new'
+  match '/contituent/register', to: 'contituent#create', via: [:post]
+
 
 
   #volunteer
