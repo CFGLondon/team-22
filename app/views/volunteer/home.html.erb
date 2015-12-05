@@ -140,15 +140,14 @@
 			<section class="content-inner">
 				<h2 class="content-sub-heading" onclick="location.href='./schedule.html.erb';">Go to your calendar!!</h2>
 				<h2 class="content-sub-heading">Your Appointment</h2>
-				<p id="Volunteers1">
 				<div class="tile-wrap">
-					<div class="tile tile-collapse tile-brand tile-appointment">
-						<div data-target="#tile-collapse-13" data-toggle="tile">
+					<div class="tile tile-collapse tile-brand tile-appointment-1">
+						<div data-target="#tile-collapse-15" data-toggle="tile">
 							<div class="tile-inner">
 								<div class="text-overflow">Sat Dec 25 2015 09:33:45 GMT+0000 (GMT Standard Time)</div>
 							</div>
 						</div>
-						<div class="tile-active-show collapse" id="tile-collapse-13">
+						<div class="tile-active-show collapse" id="tile-collapse-15">
 							<div class="tile-sub">
 								<p>Please call to AgeUK on Satuday December 25 2015 09:33:45 GMT+0000 (GMT Standard Time)</p>
 							</div>
@@ -160,13 +159,10 @@
 								</div>
 							</div>
 						</div>
-						
-						
 					</div>
 				</div>
-				</p>
 				<div class="tile-wrap">
-					<div class="tile tile-collapse tile-brand tile-appointment">
+					<div class="tile tile-collapse tile-brand tile-appointment-2">
 						<div data-target="#tile-collapse-13" data-toggle="tile">
 							<div class="tile-inner">
 								<div class="text-overflow">Sat Dec 15 2015 11:33:45 GMT+0000 (GMT Standard Time)</div>
@@ -179,13 +175,31 @@
 				
 							<div class="tile-footer">
 								<div class="tile-footer-btn pull-left">
-									<a class="btn btn-flat waves-attach" onclick="approvedFunc(1,'Appointment')"><span class="icon">check</span>&nbsp;Going</a>
-									<a class="btn btn-flat waves-attach" data-toggle="tile" onclick="LaterFunc(1,'Appointment')"><span class="icon">close</span>&nbsp;Cancel Appointment</a>
+									<a class="btn btn-flat waves-attach" onclick="approvedFunc(2,'Appointment')"><span class="icon">check</span>&nbsp;Going</a>
+									<a class="btn btn-flat waves-attach" data-toggle="tile" onclick="LaterFunc(2,'Appointment')"><span class="icon">close</span>&nbsp;Cancel Appointment</a>
 								</div>
 							</div>
 						</div>
-						
-						
+					</div>
+				</div>
+				<h2 class="content-sub-heading">Write your feedback!</h2>
+				<div class="tile-wrap">
+					<div class="tile tile-collapse tile-brand-accent tile-old">
+						<div data-target="#tile-collapse-14" data-toggle="tile">
+							<div class="tile-inner">
+								<div class="text-overflow">Sat Nov 25 2015 09:33:45 GMT+0000 (GMT Standard Time)</div>
+							</div>
+						</div>
+						<div class="tile-active-show collapse" id="tile-collapse-14">
+							<div class="tile-sub">
+								<p>Please write comment on calling November 25 2015 09:33:45 GMT+0000 (GMT Standard Time)</p>
+							</div>
+							<div class="tile-footer">
+								<div class="tile-footer-btn pull-left">
+									<a class="btn btn-flat waves-attach" onclick="location.href='./reviews.html.erb';">&nbsp;Comment</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -198,7 +212,7 @@
 		function approvedFunc(id, mode) {
 		}
 		function LaterFunc(id, mode) {
-			$(".tile-appointment").remove();
+			$(".tile-appointment-" + id).remove();
 		}
 	</script>
 	<script src="../js/base.min.js"></script>
