@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   #match '/registration/volunteer', to: 'registration#volunteer', via: [:get]
 
   get '/volunteer/register', :as => 'volunteer_register',to: 'volunteer#new'
-  get '/volunteer/login', :as => 'volunteer_login',to: 'volunteer#login'
+  post '/volunteer/login', :as => 'volunteer_login',to: 'volunteer#login'
   match '/volunteer/register', to: 'volunteer#create', via: [:post]
 
   get '/contituent/register', :as => 'contituent_register',to: 'contituent#new'
