@@ -14,10 +14,9 @@ class VolunteerController < ApplicationController
                     gender: params[:gender],
                     referee_name: params[:referee_name],
                     refree_email: params[:refree_email],
-                    referee_description: params[:referee_description],
-                    preference_one: params[:preference_two],
-                    preference_three: params[:preference_three]
+                    referee_description: params[:referee_description]
                     )
+        render 'show'
     end 
 
     def home
