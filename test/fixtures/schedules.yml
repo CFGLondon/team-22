@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  volunteer_id: 1
+  constituent_id: 1
+  start: 2015-12-05 01:11:01
+  end: 2015-12-05 01:11:01
+  volunteer_rating: 1
+  constituent_rating: 1
+  constituent_comment: MyString
+  volunteer_comment: MyString
+  volunteer_confirmation: 1
+
+two:
+  volunteer_id: 1
+  constituent_id: 1
+  start: 2015-12-05 01:11:01
+  end: 2015-12-05 01:11:01
+  volunteer_rating: 1
+  constituent_rating: 1
+  constituent_comment: MyString
+  volunteer_comment: MyString
+  volunteer_confirmation: 1
