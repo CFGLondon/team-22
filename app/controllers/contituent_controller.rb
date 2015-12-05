@@ -1,7 +1,7 @@
-class VolunteerController < ApplicationController
+class ContituentController < ApplicationController
 
     def new
-        @volunteer = User.new
+        @contituent = User.new
     end
 
     def create
@@ -23,5 +23,4 @@ class VolunteerController < ApplicationController
 
     def schedule
     end 
-
 end

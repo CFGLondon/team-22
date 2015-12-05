@@ -1,0 +1,19 @@
+<%= form_for @contituent, url: {action: "new"} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_area :name %></br>
+  <%= f.label :password %>
+  <%= f.text_area :password %></br>
+   <%= f.label :avaliability_date %>
+  <%= f.text_area :avaliability_date %></br>
+  <%= check_box_tag(:preference_one) %>
+  <%= label_tag(:preference_one, "Traveling") %><br>
+   <%= check_box_tag(:preference_two) %>
+  <%= label_tag(:preference_one, "Reading") %><br>
+   <%= check_box_tag(:preference_one) %>
+  <%= label_tag(:preference_one, "Cooking") %><br>
+   <%= f.label :phone %>
+  <%= f.text_area :phone %></br>
+   <%= f.label :gender %>
+  <%= f.text_area :gender %></br>
+  <%= f.submit "Submit" %>
+<% end %>
