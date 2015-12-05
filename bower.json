@@ -9,7 +9,17 @@
   "vendor": {
     "name": "bower-rails generated vendor assets",
     "dependencies": {
-      "bootstrap" : "https://github.com/twbs/bootstrap.git#v3.3.5"
+      "bootstrap" : "https://github.com/twbs/bootstrap.git#v3.3.5",
+      "isotope"  : "https://github.com/metafizzy/isotope.git#v2.0.0",
+      "ajaxchimp" : "https://github.com/scdoshi/jquery-ajaxchimp.git#v1.2.0",
+      "placeholdem" : "https://github.com/jackrugile/placeholdem.git#v1.0.1",
+      "slick" : "https://github.com/kenwheeler/slick.git#1.5.7",
+      "waypoints": "https://github.com/imakewebthings/waypoints.git#v2.0.3",
+      "TimeCircles": "https://github.com/wimbarelds/TimeCircles.git#v1.5.2",
+      "stellar": "https://github.com/markdalgleish/stellar.js.git#v0.6.0",
+      "modernizr" : "https://github.com/Modernizr/Modernizr.git#v2.6.2",
+      "font-awesome" : "https://github.com/components/font-awesome.git#v4.4.0",
+      "rs-plugin" : "https://github.com/ueqt/bower-rs-plugin.git"
     }
   }
 }
