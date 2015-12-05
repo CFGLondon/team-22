@@ -52,13 +52,13 @@
               <div class="sminputs">
               <div class="input full">
                 <%= f.label :password, :class => 'string optional', :for => 'user-pw' %>
-                <%= f.text_area :password %></br>
+                <%= f.password_field :password %></br>
               </div>
             </div>
               <div class="sminputs">
               <div class="input full">
                 <%= f.label :avaliability_date %>
-                <%= f.text_area :avaliability_date %></br>
+                <%= f.date_field :avaliability_date %></br>
               </div>
             </div>
             <div class="sminputs">
@@ -71,7 +71,7 @@
               <div class="input full">
                 <%= check_box_tag(:preference_two) %>
                     <%= label_tag(:preference_one, "Reading") %>
-              </div>
+              </div>     
               <div class="input full">
                 <%= check_box_tag(:preference_one) %>
                     <%= label_tag(:preference_one, "Cooking") %>
