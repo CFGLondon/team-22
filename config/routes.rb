@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   match '/contituent/profile', to: 'contituents#profile', via: [:get]
   match '/contituent/reviews', to: 'contituents#reviews', via: [:get]
   match '/contituent/schedule', to: 'contituents#schedule', via: [:get]
-  match '/contituent/settings', to: 'contituents#settings', via: [:get]
+  match '/contituent/settings', to: 'contituents33#settings', via: [:get]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

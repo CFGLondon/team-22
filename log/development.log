@@ -1570,3 +1570,10 @@ Started GET "/assets/pages.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef
 
 
 Started GET "/assets/volunteer.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for ::1 at 2015-12-05 00:27:03 +0000
+
+
+Started GET "/" for ::1 at 2015-12-05 00:28:44 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 153ms (Views: 146.3ms | ActiveRecord: 0.0ms)
