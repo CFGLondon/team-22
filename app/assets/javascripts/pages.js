@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * Runek
  * http://www.scoopthemes.com/
@@ -473,3 +474,6 @@ $(document).ready(function() {
     appMaster.ThemeSwitcher();
 
 });
+=======
+
+>>>>>>> backend2
