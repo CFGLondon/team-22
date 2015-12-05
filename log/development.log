@@ -1539,3 +1539,34 @@ Started GET "/contituent/settings" for ::1 at 2015-12-04 23:24:04 +0000
 Processing by ContituentsController#settings as HTML
   Rendered contituents/settings.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 00:27:03 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 504ms (Views: 496.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 00:27:03 +0000
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contituents.self-6cd7d1840598fba2bac3f3d18b93bb496fa949c79c54ba0515670a149a381149.css?body=1" for ::1 at 2015-12-05 00:27:03 +0000
+
+
+Started GET "/assets/volunteer.self-1ba3a12867380872e54980423ceddb45ea5c314599ad6a4feca4893352b5ec22.css?body=1" for ::1 at 2015-12-05 00:27:03 +0000
+
+
+Started GET "/assets/pages.self-259aff4da48f297d9e078e6709d10373b8c2ed7911f566599981513a4448677d.css?body=1" for ::1 at 2015-12-05 00:27:03 +0000
+
+
+Started GET "/assets/contituents.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for ::1 at 2015-12-05 00:27:03 +0000
+
+
+Started GET "/assets/pages.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for ::1 at 2015-12-05 00:27:03 +0000
+
+
+Started GET "/assets/volunteer.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for ::1 at 2015-12-05 00:27:03 +0000
