@@ -4,6 +4,9 @@ class VolunteerController < ApplicationController
         @volunteer = User.new
     end
 
+    def login
+    end
+
     def create
         puts params
         @volunteer = User.create!(
@@ -20,7 +23,8 @@ class VolunteerController < ApplicationController
     end 
 
     def home
-    end 
+    end
+
 
     def profile
     end
