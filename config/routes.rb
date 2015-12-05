@@ -12,7 +12,6 @@ Rails.application.routes.draw do
   # Registration
   match '/registration/volunteer', to: 'registration#volunteer', via: [:get] 
 
-
   #volunteer
   match '/volunteer/register', to: 'volunteer#new', via: [:get]
   match '/volunteer/home', to: 'volunteer#home', via: [:get]
