@@ -53,15 +53,21 @@
 				<h2 class="content-sub-heading">Volunteers</h2>
 				<p id="Volunteers1">
 				<div class="tile-wrap">
-					<div class="tile tile-collapse tile-brand tile-volunteer">
+					<div class="tile tile-collapse tile-brand tile-volunteer-1">
 						<div data-target="#tile-collapse-13" data-toggle="tile">
 							<div class="tile-inner">
-								<div class="text-overflow">Name</div>
+								<div class="text-overflow">Pierce Grannel</div>
 							</div>
 						</div>
 						<div class="tile-active-show collapse" id="tile-collapse-13">
 							<div class="tile-sub">
-								<p>His details</p>
+								<p>Email:p.grannel@yahoo.com</p>
+								<p>Phone number: +447542434562 </p>
+								<p>Preferences: Technology, Theatre, Movies </p>
+								<p>Location: London </p>
+								<p>Gender: Male</p>
+								<p>Availability: Mon-Fri 4pm - 5pm</p>
+								<p>Referee: John Mitchell, j.mitchell@ucl.ac.uk</p>
 							</div>
 				
 				<div class="tile-footer">
@@ -72,25 +78,104 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="tile tile-collapse tile-brand tile-volunteer-2">
+						<div data-target="#tile-collapse-1" data-toggle="tile">
+							<div class="tile-inner">
+								<div class="text-overflow">Cristopher Hammond</div>
+							</div>
+						</div>
+						<div class="tile-active-show collapse" id="tile-collapse-1">
+							<div class="tile-sub">
+								<p>Email:chammond@ucl.ac.uk</p>
+								<p>Phone number: +447599882992 </p>
+								<p>Preferences: Football, Music, Tennis </p>
+								<p>Location: London </p>
+								<p>Gender: Male</p>
+								<p>Availability: Fri 5pm-6pm</p>
+								<p>Referee: Graham Roberts, g.roberts@gmail.com</p>
+							</div>
+				
+				<div class="tile-footer">
+								<div class="tile-footer-btn pull-left">
+									<a class="btn btn-flat waves-attach" onclick="approvedFunc(2,'Volunteers')"><span class="icon">check</span>&nbsp;Aproved</a>
+									<a class="btn btn-flat waves-attach" data-toggle="tile" onclick="LaterFunc(2,'Volunteers')"><span class="icon">close</span>&nbsp;Reject</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				</p>
 				<h2 class="content-sub-heading">Old people</h2>
 				<p id="OldPeople1">
 				<div class="tile-wrap">
-					<div class="tile tile-collapse tile-brand-accent tile-old">
+					<div class="tile tile-collapse tile-brand-accent tile-old-1">
 						<div data-target="#tile-collapse-14" data-toggle="tile">
 							<div class="tile-inner">
-								<div class="text-overflow">Name</div>
+								<div class="text-overflow">Mark Hamilton</div>
 							</div>
 						</div>
 						<div class="tile-active-show collapse" id="tile-collapse-14">
 							<div class="tile-sub">
-								<p>His details</p>
+								<p>Email:mark_hamilton@gmail.com</p>
+								<p>Phone number: +447599876543 </p>
+								<p>Preferences: Football, Racing sports, Reading</p>
+								<p>Location: London </p>
+								<p>Gender: Male</p>
+								<p>Availability: Sat-Sun 12pm-3pm</p>
 							</div>
 							<div class="tile-footer">
 								<div class="tile-footer-btn pull-left">
 									<a id="approved" class="btn btn-flat waves-attach" onclick="approvedFunc(1,'OldPeople')"><span class="icon">check</span>&nbsp;Approved</a>
 									<a class="btn btn-flat waves-attach" data-toggle="tile" onclick="LaterFunc(1,'OldPeople')"><span class="icon">close</span>&nbsp;Reject</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tile tile-collapse tile-brand-accent tile-old-2">
+						<div data-target="#tile-collapse-10" data-toggle="tile">
+							<div class="tile-inner">
+								<div class="text-overflow">Julia Rose</div>
+							</div>
+						</div>
+						<div class="tile-active-show collapse" id="tile-collapse-10">
+							<div class="tile-sub">
+								<p>Email:j.rose@yahoo.com</p>
+								<p>Phone number: +447596782342 </p>
+								<p>Preferences: Movies, Reading, TV shows </p>
+								<p>Location: London </p>
+								<p>Gender: Female</p>
+								<p>Availability: Mon-Sun 9am-6pm</p>
+							</div>
+							<div class="tile-footer">
+								<div class="tile-footer-btn pull-left">
+									<a id="approved" class="btn btn-flat waves-attach" onclick="approvedFunc(2,'OldPeople')"><span class="icon">check</span>&nbsp;Approved</a>
+									<a class="btn btn-flat waves-attach" data-toggle="tile" onclick="LaterFunc(2,'OldPeople')"><span class="icon">close</span>&nbsp;Reject</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tile tile-collapse tile-brand-accent tile-old-3">
+						<div data-target="#tile-collapse-20" data-toggle="tile">
+							<div class="tile-inner">
+								<div class="text-overflow">Patricia Williams</div>
+							</div>
+						</div>
+						<div class="tile-active-show collapse" id="tile-collapse-20">
+							<div class="tile-sub">
+								<p>Email:williams_patricia@gmail.com</p>
+								<p>Phone number: +447509882772 </p>
+								<p>Preferences: Theatre, Movies, Tennis </p>
+								<p>Location: Stratford </p>
+								<p>Gender: Female</p>
+								<p>Availability: Mon-Fri 5pm-8pm</p>
+							</div>
+							<div class="tile-footer">
+								<div class="tile-footer-btn pull-left">
+									<a id="approved" class="btn btn-flat waves-attach" onclick="approvedFunc(3,'OldPeople')"><span class="icon">check</span>&nbsp;Approved</a>
+									<a class="btn btn-flat waves-attach" data-toggle="tile" onclick="LaterFunc(3,'OldPeople')"><span class="icon">close</span>&nbsp;Reject</a>
 								</div>
 							</div>
 						</div>
@@ -106,19 +191,34 @@
 	<script>
 		function approvedFunc(id, mode) {
 			if(mode == 'OldPeople') {
-				$(".tile-old").remove();
+				if(id==1)
+					$(".tile-old-1").remove();
+				else if(id==2)
+					$(".tile-old-2").remove();
+				else
+					$(".tile-old-3").remove();
 			}
 			else {
-				$(".tile-volunteer").remove();
+				if(id==1)
+					$(".tile-volunteer-1").remove();
+				else
+					$(".tile-volunteer-2").remove();
 			}
 		}
 		function LaterFunc(id, mode) {
 			if(mode == 'OldPeople') {
-				$(".tile-old").remove();
+				if(id==1)
+					$(".tile-old-1").remove();
+				else if(id==2)
+					$(".tile-old-2").remove();
+				else
+					$(".tile-old-3").remove();
 			}
 			else {
-				$(".tile-volunteer").remove();
-			}
+				if(id==1)
+					$(".tile-volunteer-1").remove();
+				else
+					$(".tile-volunteer-2").remove();			}
 		}
 	</script>
 	<script src="../js/base.min.js"></script>
